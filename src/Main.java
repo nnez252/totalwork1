@@ -14,7 +14,9 @@ public class Main {
         for (Employee e : employees) {
             System.out.println(e);
         }
-        System.out.println(Employee.Sum();
-
+        Employee.Sum(employees ,1);
+        System.out.println(Employee.getMin(employees));
+        System.out.println(Employee.getMax(employees));
+        Employee.middel(employees ,1);
     }
 }
