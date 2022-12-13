@@ -48,7 +48,7 @@ public class Employee {
         for (Employee employee : employees) {
             if (employee.getSalary() == num) {
                 if (sumsalary == sumsalary + employee.getSalary()) {
-                    System.out.println("Сумма зарплат за месяц" + num + sumsalary);
+                    System.out.println("Сумма зарплат за  месяц" + num + sumsalary);
                 }
             }
 
