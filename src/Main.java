@@ -17,6 +17,7 @@ public class Main {
         Employee.Sum(employees ,1);
         System.out.println(Employee.getMin(employees));
         System.out.println(Employee.getMax(employees));
-        Employee.middel(employees ,1);
+        Employee.Middel(employees ,1);
+        Employee.Personal(employees);
     }
 }

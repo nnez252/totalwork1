@@ -44,11 +44,11 @@ public class Employee {
     }
 
     static void Sum(Employee[] employees, int num) {
-        int sumsalary = 0;
+        int SumSalary = 0;
         for (Employee employee : employees) {
             if (employee.getSalary() == num) {
-                if (sumsalary == sumsalary + employee.getSalary()) {
-                    System.out.println("Сумма зарплат за  месяц" + num + sumsalary);
+                if (SumSalary == SumSalary + employee.getSalary()) {
+                    System.out.println("Сумма зарплат за  месяц" + num + SumSalary);
                 }
             }
 
@@ -76,17 +76,23 @@ public class Employee {
         return maxValue;
     }
 
-    static void middel(Employee[] employees, int num) {
-        int sumsalary = 0;
+    static void Middel(Employee[] employees, int num) {
+        int SumSalary = 0;
         for (Employee employee : employees) {
             if (employee.getSalary() == num) {
-                if (sumsalary == ((sumsalary + employee.getSalary())/employees.length)) {
-                    System.out.println("Сумма зарплат за месяц" + num + sumsalary);
+                if (SumSalary == ((SumSalary + employee.getSalary())/employees.length)) {
+                    System.out.println("Сумма зарплат за месяц" + num + SumSalary);
                 }
             }
 
 
         }
     }
+    static void Personal(Employee[] employees) {
+        for (int i = 1; i < employees.length; i++) {
+            System.out.println(employees[i].getFio());
+        }
+    }
 }
+
 
