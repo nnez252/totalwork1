@@ -43,17 +43,12 @@ public class Employee {
         return "Имя " + fio + " Отдел " + unite + " Зарплата " + salary + " Id " + id;
     }
 
-    static void Sum(Employee[] employees, int num) {
+    static void Sum(Employee[] employees) {
         int SumSalary = 0;
-        for (Employee employee : employees) {
-            if (employee.getSalary() == num) {
-                if (SumSalary == SumSalary + employee.getSalary()) {
-                    System.out.println("Сумма зарплат за  месяц" + num + SumSalary);
-                }
-            }
-
-
+        for (int i = 0; i < employees.length; i++) {
+            SumSalary += employees[i].getSalary();
         }
+        System.out.println("Сумма зарплат за месяц " + SumSalary);
     }
 
     public static int getMin(Employee[] employees) {
@@ -76,18 +71,18 @@ public class Employee {
         return maxValue;
     }
 
-    static void Middel(Employee[] employees, int num) {
+    static void Middel(Employee[] employees) {
         int SumSalary = 0;
-        for (Employee employee : employees) {
-            if (employee.getSalary() == num) {
-                if (SumSalary == ((SumSalary + employee.getSalary())/employees.length)) {
-                    System.out.println("Сумма зарплат за месяц" + num + SumSalary);
-                }
-            }
-
-
+        int middel = 0;
+        for (int i = 0; i < employees.length; i++) {
+            SumSalary += employees[i].getSalary();
+            middel = SumSalary;
+            middel = middel / employees.length;
         }
+        System.out.println("Срезднее значение зарплат " + middel);
     }
+
+
     static void Personal(Employee[] employees) {
         for (int i = 1; i < employees.length; i++) {
             System.out.println(employees[i].getFio());

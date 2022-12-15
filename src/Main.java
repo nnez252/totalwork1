@@ -14,10 +14,10 @@ public class Main {
         for (Employee e : employees) {
             System.out.println(e);
         }
-        Employee.Sum(employees ,1);
+        Employee.Sum(employees);
         System.out.println(Employee.getMin(employees));
         System.out.println(Employee.getMax(employees));
-        Employee.Middel(employees ,1);
+        Employee.Middel(employees);
         Employee.Personal(employees);
     }
 }
